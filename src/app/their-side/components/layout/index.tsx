@@ -6,7 +6,7 @@ export default function TheirSideLayout({
     children: React.ReactNode;
 }) {
     return (
-        <section className="flex w-full  items-center h-screen">
+        <section className="flex flex-col md:flex-row  w-full items-center h-screen">
             <Header />
             {children}
         </section>

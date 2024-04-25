@@ -166,13 +166,13 @@ function TheirSide() {
 
     return (
         <TheirSideLayout>
-            <main className="flex lg:overflow-y-auto bg-white flex-col lg:h-screen py-12 text-left lg:relative lg:w-[65%] md:w-full">
+            <main className="flex md:overflow-y-auto md:h-screen bg-white flex-col lg:h-screen py-12 text-left lg:relative lg:w-[65%] md:w-full">
                 <div className="px-[8rem]">
                     <h1 className="text-2xl font-medium text-slate-900 leading-7">
                         Episodes
                     </h1>
                 </div>
-                <div className="mt-12 flex flex-col">
+                <div className="mt-12 flex mb-8 md:mb-0 flex-col">
                     {episodeData.map((episode, index) => (
                         <EpisodeItem
                             date={episode.date}
@@ -183,7 +183,7 @@ function TheirSide() {
                             onPodcastClick={handlePodcastChange}
                         />
                     ))}
-                    <div className="fixed bottom-0 lg:left-112 lg:w-[65%] min-h-[104px] backdrop-blur shadow-sm shadow-slate-700 h-6">
+                    <div className="fixed bottom-0 left-0 right-0 w-full lg:left-auto lg:w-[65%] min-h-[104px] backdrop-blur shadow-sm shadow-slate-700 h-6">
                         <audio
                             ref={audioRef}
                             onLoadedData={handleLoadedData}
@@ -260,7 +260,7 @@ function TheirSide() {
                                             value={currentTime}
                                             onChange={handleChange}
                                         />
-                                        <div className="text-sm font-mono leading-6 text-slate-500 gap-2 flex">
+                                        <div className="text-sm hidden md:flex font-mono leading-6 text-slate-500 gap-2">
                                             <span>
                                                 {hour(currentTime) < 10
                                                     ? `0${hour(currentTime)}`
