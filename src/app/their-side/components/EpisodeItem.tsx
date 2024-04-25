@@ -23,7 +23,7 @@ function EpisodeItem({
     };
 
     return (
-        <div className="text-left border px-[8rem] py-12">
+        <div className="text-left border lg:px-[8rem] px-6 py-12">
             <time className="font-mono text-sm leading-7 text-slate-500">
                 {date}
             </time>
