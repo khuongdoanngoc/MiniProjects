@@ -10,7 +10,7 @@ export default function Home() {
             description:
                 "You've ordered your SM7B, boom arm, and a bunch of acoustic foam. With this project, you can finally stop procrastinating and record your first episode.",
             img: TheirSideBanner,
-            link: "http://localhost:3000/their-side",
+            link: "https://mini-projects-six.vercel.app/their-side",
         },
         {
             name: "Currency Converter",
